@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'icomoonBtn';
+  src:  url('fonts/icomoonBtn.eot?bsavil');
+  src:  url('fonts/icomoonBtn.eot?bsavil#iefix') format('embedded-opentype'),
+    url('fonts/icomoonBtn.ttf?bsavil') format('truetype'),
+    url('fonts/icomoonBtn.woff?bsavil') format('woff'),
+    url('fonts/icomoonBtn.svg?bsavil#icomoonBtn') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="iconBtn-"], [class*=" iconBtn-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoonBtn' !important;
+  /*speak: never;*/
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconBtn-twitter:before {
+  content: "\e901";
+}
+.iconBtn-facebook-square:before {
+  content: "\e902";
+}
+.iconBtn-instagram:before {
+  content: "\e903";
+}
+.iconBtn-envelop:before {
+  content: "\e945";
+}
+.iconBtn-github:before {
+  content: "\eab1";
+}
+.iconBtn-linkedin:before {
+  content: "\eac9";
+}
+
+@font-face {
+  font-family: 'icomoonBtn';
+  src:  url('fonts2/icomoonBtn.eot?ff6erj');
+  src:  url('fonts2/icomoonBtn.eot?ff6erj#iefix') format('embedded-opentype'),
+    url('fonts2/icomoonBtn.ttf?ff6erj') format('truetype'),
+    url('fonts2/icomoonBtn.woff?ff6erj') format('woff'),
+    url('fonts2/icomoonBtn.svg?ff6erj#icomoonBtn') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.iconBtn-mobile:before {
+  content: "\e958";
+}
