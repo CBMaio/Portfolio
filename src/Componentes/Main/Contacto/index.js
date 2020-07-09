@@ -5,7 +5,7 @@ import styleFont from '../../../Componentes/icomoon/style.css';
 const Contacto = () => {
     return(
         <ContactBtn>
-            <$Contacto>Contacto!</$Contacto>
+            <ContactText>Contacto!</ContactText>
             <SocialMediaLink href="#"><i class="iconBtn-instagram"></i></SocialMediaLink>
             <SocialMediaLink href="#"><i class="iconBtn-linkedin"></i></SocialMediaLink>
             <SocialMediaLink href="#"><i class="iconBtn-github"></i></SocialMediaLink>
@@ -18,7 +18,7 @@ const Contacto = () => {
 export default Contacto;
 
 const ContactBtn = styled.div`{
-    width: 150px;
+    width: 80%;
     height: 40px;
     background: #ccc;
     border-radius: 40px;
@@ -29,16 +29,18 @@ const ContactBtn = styled.div`{
     bottom: 50px;
     cursor: pointer;
     transition: .3s linear;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1),
-                inset 5px 2px 10px rgba(0, 0, 0, .1);
-    margin: 30px;
+
+    @media (max-width: 728px){
+        width: 90%;
+     }
 
     &:hover {
         transform: scale(1.1);
     }
+
 }`;
 
-const $Contacto = styled.span`{
+const ContactText = styled.span`{
     position: absolute;
     width: 100%;
     height: 100%;
