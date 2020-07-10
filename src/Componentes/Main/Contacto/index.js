@@ -6,8 +6,8 @@ const Contacto = () => {
     return(
         <ContactBtn>
             <ContactText>Contacto!</ContactText>
-            <SocialMediaLink href="#"><i class="iconBtn-instagram"></i></SocialMediaLink>
             <SocialMediaLink href="#"><i class="iconBtn-linkedin"></i></SocialMediaLink>
+            <SocialMediaLink href="#"><i class="iconBtn-instagram"></i></SocialMediaLink>
             <SocialMediaLink href="#"><i class="iconBtn-github"></i></SocialMediaLink>
             <SocialMediaLink href="#"><i class="iconBtn-envelop"></i></SocialMediaLink>
             <SocialMediaLink href="#"><i class="iconBtn-mobile"></i></SocialMediaLink>
@@ -55,12 +55,13 @@ const ContactText = styled.span`{
     border-radius: 40px;
 
     &:hover {
-        transform: translateY(-200%);
-        transition-delay: .1s;
+        opacity: 0;
+        transition: opacity .5s .125s ease-out;
     }
 }`;
 
 const SocialMediaLink = styled.a`{
+    background: #ccc;
     text-decoration: none;
     flex: 1;
     font-size: 18px;

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import Contacto from '../Contacto/index.js'
+import Contacto from '../Contacto/index.js';
 
 const Navbar = () => {
 
@@ -49,9 +49,6 @@ const List = styled.ul`{
     background: #c76a7b;
     border-box: box-sizing;
 
-    @media (max-width: 728px){
-        width: 90%;
-     }
 
     
     &.oculto {
@@ -60,6 +57,12 @@ const List = styled.ul`{
 
     &.ver {
         display: flex;
+
+        
+        @media (max-width: 768px) {
+            width: 90%;
+        };
+
     }
     
 }`
@@ -69,6 +72,10 @@ const ListItem = styled.li`{
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.1rem;
     margin: 25px 0;
+
+    &:hover{
+        text-decoration: underline;
+    }
 }`
 
 const OpenBtn = styled.span`{
