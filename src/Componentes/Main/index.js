@@ -1,22 +1,21 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-//import Title from './Title/index.js'
 import Navbar from './Navbar/index.js';
 import Contacto from './Contacto/index.js';
 import FotoPerfil from '../../Archivos/img/foto_4-removebg-preview.png';
-import FotoPerfilNoche from '../../Archivos/img/foto-removebg.png';
+import FotoPerfilInvertida from '../../Archivos/img/image.png';
 
 const Main = () => {
 
-    const [color, setColor] = useState("negro");
-    const cambiarColor = () => {color == "negro" ? setColor("blanco") : setColor("negro")};
+    const [estado, setEstado] = useState("dia");
+    const cambiarEstado = () => {estado == "dia" ? setEstado("noche") : setEstado("dia")};
     
     return(
-        <PrincipalPage className = {color} >
+        <PrincipalPage className = {estado} >
             <Navbar/>
-            <div>
-                <Name onClick = {cambiarColor} className = {color}>Carolina</Name>
-            </div>
+            <NameContain onClick = {cambiarEstado}>
+                <Name className = {estado}>Carolina</Name>
+            </NameContain>
         </PrincipalPage>
     )
 }
@@ -37,19 +36,21 @@ const PrincipalPage = styled.header`{
         background-position: bottom;
     }
         
-    &.blanco {
+    &.noche {
         background: black;
-        background-image: url("${FotoPerfilNoche}");
+        background-image: url("${FotoPerfilInvertida}");
         background-repeat: no-repeat;
         background-size: contain;
         transition: all 1s ease-out;
+        background-position: right;
 
         @media (max-width: 650px){
-            background-size: contain;
+            background-size: cover;
             background-position: bottom;
         }
      }
-     &.negro {
+
+     &.dia {
          color: #feebed;
          transition: all .7s ease-out;
       }
@@ -62,19 +63,13 @@ const Name = styled.h1`{
     display: flex;
     justify-content: center;
     margin-top: 8%;
-    margin-left: 20%;
     cursor: pointer;
     
-    &.blanco {
+    &.noche {
        color: #c76a7b;
-
-        @media (max-width: 650px){
-            color: white;
-        }
     }
-
    
-    &.negro {
+    &.dia {
         color: black;
      }
     
@@ -85,3 +80,8 @@ const Name = styled.h1`{
         margin-left: 8%;
      }
 }`;
+
+const NameContain = styled.div`{
+    height: 100%;
+    cursor: pointer;
+}`

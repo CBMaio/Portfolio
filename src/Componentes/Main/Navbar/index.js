@@ -31,7 +31,6 @@ const NavbarList = styled.nav`{
     background: #c76a7b;
     display: flex;
     justify-content: flex-end;
-    border-bottom: 3px solid #fff;
 }`
 
 const List = styled.ul`{
