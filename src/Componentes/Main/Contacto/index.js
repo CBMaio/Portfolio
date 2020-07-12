@@ -5,11 +5,11 @@ import styleFont from '../../../Componentes/icomoon/style.css';
 const Contacto = () => {
     return(
         <ContactBtn>
-            <ContactText>Contacto!</ContactText>
-            <SocialMediaLink href="#"><i class="iconBtn-linkedin"></i></SocialMediaLink>
-            <SocialMediaLink href="#"><i class="iconBtn-instagram"></i></SocialMediaLink>
-            <SocialMediaLink href="#"><i class="iconBtn-github"></i></SocialMediaLink>
-            <SocialMediaLink href="#"><i class="iconBtn-envelop"></i></SocialMediaLink>
+          {/*  <ContactText>Contacto!</ContactText> */}
+            <SocialMediaLink target="_blank" href="https://www.linkedin.com/in/carolinamaio/"><i class="iconBtn-linkedin"></i></SocialMediaLink>
+            <SocialMediaLink href="https://www.instagram.com/caromaio/"><i class="iconBtn-instagram"></i></SocialMediaLink>
+            <SocialMediaLink href="https://github.com/CBMaio"><i class="iconBtn-github"></i></SocialMediaLink>
+            <SocialMediaLink href="mailto:carolinabelenmaio@gmail.com"><i class="iconBtn-envelop"></i></SocialMediaLink>
             <SocialMediaLink href="#"><i class="iconBtn-mobile"></i></SocialMediaLink>
         </ContactBtn>
     )
@@ -18,10 +18,10 @@ const Contacto = () => {
 export default Contacto;
 
 const ContactBtn = styled.div`{
-    width: 80%;
+    width: 100%;
     height: 40px;
-    background: #ccc;
-    border-radius: 40px;
+    background: #9A9EAB;
+    //border-radius: 40px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -29,18 +29,10 @@ const ContactBtn = styled.div`{
     bottom: 50px;
     cursor: pointer;
     transition: .3s linear;
-
-    @media (max-width: 728px){
-        width: 90%;
-     }
-
-    &:hover {
-        transform: scale(1.1);
-    }
-
+    left: 0;
 }`;
 
-const ContactText = styled.span`{
+/*const ContactText = styled.span`{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -49,22 +41,27 @@ const ContactText = styled.span`{
     text-align: center;
     letter-spacing: 1px;
     line-height: 38px;
-    z-index: 999;
+    z-index: 1000;
     font-size: 18px;
     transition: .3s linear;
     border-radius: 40px;
 
     &:hover {
-        opacity: 0;
+        transform: translateX(100%);
         transition: opacity .5s .125s ease-out;
     }
 }`;
-
+*/
 const SocialMediaLink = styled.a`{
-    background: #ccc;
+    background: #9A9EAB;
     text-decoration: none;
     flex: 1;
+    color: #5D535E;
     font-size: 18px;
-    color: #061e24;
     text-align: center;
+
+    &:hover {
+        transform: scale(1.1);
+        color: #061e24;
+    }
 }`;
