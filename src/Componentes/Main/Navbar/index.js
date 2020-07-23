@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import Contacto from '../Contacto/index.js';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -12,9 +13,9 @@ const Navbar = () => {
             <OpenBtn onClick = {mostrarSideBar} className = {sideBar}>&#9776;</OpenBtn>
             <CloseBtn  onClick = {mostrarSideBar} className = {sideBar}>&times;</CloseBtn>
             <List className = {sideBar}>                
-                <ListItem>Sobre mí</ListItem>
-                <ListItem>Trabajos</ListItem>
-                <ListItem>Expeciencia</ListItem>
+                <ListItem><Link to="/skills">Habilidades</Link></ListItem>
+                <ListItem>Experiencia</ListItem>
+                <ListItem><Link to="/aboutMe">Sobre mí..</Link></ListItem>
                 <span>
                     <Contacto/>
                 </span>
@@ -45,11 +46,10 @@ const List = styled.ul`{
     top: 60px;
     margin: 0;
     padding: 20px;
-    height: 70%;
+    padding-bottom: 0;
+    height: 88vh;
     background: #c76a7b;
     border-box: box-sizing;
-
-
     
     &.oculto {
         display: none;
@@ -57,7 +57,6 @@ const List = styled.ul`{
 
     &.ver {
         display: flex;
-
         
         @media (max-width: 768px) {
             width: 90%;
@@ -72,7 +71,7 @@ const ListItem = styled.li`{
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.1rem;
     margin: 25px 0;
-
+    margin-bottom: 0;
     &:hover{
         text-decoration: underline;
     }

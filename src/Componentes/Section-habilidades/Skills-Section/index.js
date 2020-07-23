@@ -33,7 +33,7 @@ const ContainSkills = styled.div`{
 
 const SkillStyle = styled.div`{
     background: #F5FFFF;
-    border: 3px solid black;
+    border: 3px solid #626d71;
     width: 180px;
     height: 18vh;
     margin: 1.5rem;
@@ -44,10 +44,11 @@ const SkillStyle = styled.div`{
     font-size: 22px;
     letter-spacing: 1.5px;
     transition: .3s linear;
+    color: #626d71;
 
     &:hover{
-        box-shadow: inset 3px 3px #1FC7D7,
-                    inset -3px -3px #1FC7D7;
+        box-shadow: inset 4px 4px #a1d6e2,
+                    inset -4px -4px #a1d6e2;
         font-size: 24px;
     }
 

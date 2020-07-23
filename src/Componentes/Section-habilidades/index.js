@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components'
 import Section from './Skills-Section/index.js'
 
-const Profile = () => {
+const SectionSkills = () => {
 
     return(
         <Content>
@@ -14,24 +14,23 @@ const Profile = () => {
     )
 }
 
-export default Profile;
+export default SectionSkills;
 
 const Content = styled.div`{
-    background: linear-gradient(to bottom, rgba(254,254,254,1) 0%, rgba(254,254,254,1) 24%, rgba(240,240,240,1) 63%, rgb(190, 190, 190, 1) 100%);
+    background: #F1F1F2;
     height: 100vh;
     width: 100%;
+    padding-top: 3%;
+    box-sizing: border-box;
 }`;
 
 const SkillsTitleContain = styled.div`{
     display: flex;
     justify-content: center;
-    margin: 15px 0;
-
-
 }`
 
 const SkillsTitle = styled.h1`{
-    border: 2px solid black;
+    border: 2px solid #626d71;
     border-radius: 40px;
     font-family: 'Russo One', sans-serif;
     font-size: 3em;
@@ -43,6 +42,8 @@ const SkillsTitle = styled.h1`{
     text-transform: uppercase;
     letter-spacing: 3px;
     transition: 1s;
+    background: #F5FFFF;
+    color: #626d71;
 
     &:hover {
         transform: scale(1.075);
