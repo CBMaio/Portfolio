@@ -18,6 +18,11 @@ const TitleDiv = styled.div`{
     height: fit-content;
     width: width;
     display: flex;
+
+    @media (max-width: 768px) {
+        margin: 10px 30px;
+        text-align:center;
+    }
 }`
 
 const ExperiencieTitle = styled.h3`{
