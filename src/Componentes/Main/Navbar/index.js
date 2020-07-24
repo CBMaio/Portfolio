@@ -13,9 +13,9 @@ const Navbar = () => {
             <OpenBtn onClick = {mostrarSideBar} className = {sideBar}>&#9776;</OpenBtn>
             <CloseBtn  onClick = {mostrarSideBar} className = {sideBar}>&times;</CloseBtn>
             <List className = {sideBar}>                
-                <ListItem><Link to="/skills">Habilidades</Link></ListItem>
+                <ListItem><Link to="/skills" className="Enlace">Habilidades</Link></ListItem>
                 <ListItem>Experiencia</ListItem>
-                <ListItem><Link to="/aboutMe">Sobre mí..</Link></ListItem>
+                <ListItem><Link to="/aboutMe" className="Enlace">Sobre mí..</Link></ListItem>
                 <span>
                     <Contacto/>
                 </span>
@@ -47,33 +47,49 @@ const List = styled.ul`{
     margin: 0;
     padding: 20px;
     padding-bottom: 0;
-    height: 88vh;
+    height: 87.8vh;
     background: #c76a7b;
     border-box: box-sizing;
-    
+
     &.oculto {
         display: none;
     }
-
+    
     &.ver {
         display: flex;
         
         @media (max-width: 768px) {
-            width: 90%;
+            width: 90%; 
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: flex-start;
+            line-height: 70px;
         };
-
+        
     }
     
 }`
 
+
 const ListItem = styled.li`{
-    color: #fff;
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.1rem;
     margin: 25px 0;
     margin-bottom: 0;
+    
+    & > .Enlace {
+            text-decoration: none;
+            color: #fff;
+        }
+        
     &:hover{
         text-decoration: underline;
+    }
+
+    @media (max-width: 768px){
+        font-size: 24px;
+        font-weight: lighter;
     }
 }`
 

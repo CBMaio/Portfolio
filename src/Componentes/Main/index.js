@@ -46,7 +46,7 @@ const PrincipalPage = styled.header`{
         background-image: url("${FotoPerfilInvertida}");
         background-repeat: no-repeat;
         background-size: contain;
-        transition: all 1s ease-out;
+        transition: all .5s ease-out;
         background-position: right;
 
         @media (max-width: 450px){
@@ -63,7 +63,7 @@ const PrincipalPage = styled.header`{
 
      &.dia {
          color: #feebed;
-         transition: all .7s ease-out;
+         transition: all .5s ease-out;
       }
 }`;
 
@@ -103,7 +103,7 @@ const Name = styled.h1`{
 }`;
 
 const NameContain = styled.div`{
-    border: 1px solid;
-    height: 100%;
+    border: 1px solid transparent;    
+    height: 75%;
     cursor: pointer;
 }`

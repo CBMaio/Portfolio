@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components'
-import Section from './Skills-Section/index.js'
+import Section from './Skills-Section/index.js';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import HomeButton from '../HomeButton/index.js';
 
 const SectionSkills = () => {
 
@@ -10,6 +12,7 @@ const SectionSkills = () => {
                 <SkillsTitle>Skills</SkillsTitle>
             </SkillsTitleContain>
            <Section/> 
+           <HomeButton/>
         </Content>
     )
 }
@@ -54,3 +57,4 @@ const SkillsTitle = styled.h1`{
     }
 
 }`
+

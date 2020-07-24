@@ -24,6 +24,7 @@ const TextAboutMe = styled.section`{
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.2rem;
+    box-sizing: border-box;
 
     @media (max-width: 768px){
         margin: 0;
@@ -33,7 +34,6 @@ const TextAboutMe = styled.section`{
 }`;
 
 const Paragraph = styled.p`{
-    //border: 1px solid red;
     width: 40%;
     text-align: center;
     line-height: 25px;
@@ -48,4 +48,8 @@ const Paragraph = styled.p`{
 
 const TituloParagaph = styled.h2`{
     font-weight: 500;
+
+    @media (max-width: 768px){
+        margin: 0px 10px;
+    }
 }`
