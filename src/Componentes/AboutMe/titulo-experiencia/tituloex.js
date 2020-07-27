@@ -14,13 +14,14 @@ export default Title;
 const TitleDiv = styled.div`{
     margin: 20px 50px;
     padding: 20px;
-   // border: 1px solid black;
+    margin-top: 60px;
     height: fit-content;
     width: width;
     display: flex;
 
     @media (max-width: 768px) {
         margin: 10px 30px;
+        padding-bottom: 5px;
         text-align:center;
     }
 }`
@@ -39,5 +40,9 @@ const ExperiencieTitle = styled.h3`{
 
     &:hover {
         text-shadow: 2px 2px 2px white;
+    }
+
+    @media (max-width: 768px){
+        margin-top: 40px;
     }
 }`
