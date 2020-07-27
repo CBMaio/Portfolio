@@ -59,3 +59,7 @@
 .iconBtn-mobile:before {
   content: "\e958";
 }
+
+.iconBtn-menu:before {
+  content: "\e9bd";
+}
