@@ -6,7 +6,6 @@ const Contacto = () => {
     return(
         <ContactBtn>
             <SocialMediaLink target="_blank" href="https://www.linkedin.com/in/carolinamaio/"><i class="iconBtn-linkedin"></i></SocialMediaLink>
-            <SocialMediaLink target="_blank" href="https://www.instagram.com/caromaio/"><i class="iconBtn-instagram"></i></SocialMediaLink>
             <SocialMediaLink target="_blank" href="https://github.com/CBMaio"><i class="iconBtn-github"></i></SocialMediaLink>
             <SocialMediaLink href="mailto:carolinabelenmaio@gmail.com"><i class="iconBtn-envelop"></i></SocialMediaLink>
         </ContactBtn>
@@ -19,7 +18,6 @@ const ContactBtn = styled.div`{
     width: 100%;
     height: 60px;
     background: #9A9EAB;
-    //border-radius: 40px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -35,7 +33,7 @@ const SocialMediaLink = styled.a`{
     text-decoration: none;
     flex: 1;
     color: #5D535E;
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
 
     &:hover {
@@ -44,7 +42,6 @@ const SocialMediaLink = styled.a`{
     }
 
     @media (max-width: 768px){
-        font-size: 24px;
         font-weight: lighter;
     }
 }`;
