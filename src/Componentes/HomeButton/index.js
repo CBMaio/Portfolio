@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import Navbar from '../Main/Navbar/index'
 
 const HomeButton = () => {
     return (
         <Home>
-            <Link to="/main" className="Enlace">Home</Link>
+            <Link to="/" className="Enlace">Home</Link>
         </Home>
 
     )
@@ -14,7 +15,6 @@ const HomeButton = () => {
 export default HomeButton;
 
 const Home = styled.h3`{
-    background: #F1F1F2;
     font-family: 'Cedarville Cursive', cursive;
     display: flex; 
     justify-content: flex-end;
@@ -25,7 +25,7 @@ const Home = styled.h3`{
     cursor: pointer;
     position: fixed;
     bottom: 0;
-    right: 0;
+    left: 0;
     
     &:hover {
         opacity: 0.7;
@@ -36,9 +36,10 @@ const Home = styled.h3`{
         color: #626d71;
 
         @media (max-width: 768px) {
+            background: #ccc;
             font-size: 20px;
             width: 100%;
-            font-size: 23px;
+            font-size: 22px;
             text-align: center;
             margin: 0;
         }
