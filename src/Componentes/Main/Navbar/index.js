@@ -3,16 +3,24 @@ import styled from 'styled-components';
 import Contacto from '../Contacto/index.js';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = (props) => {
 
     const [sideBar, setSideBar] = useState("oculto");
     const mostrarSideBar = () => {sideBar == "oculto" ? setSideBar("ver") : setSideBar("oculto")};
 
     return (
-        <NavbarList>
+        <NavbarList 
+            style = {{
+                   background: `${props.background}` 
+            }}
+  >
             <OpenBtn onClick = {mostrarSideBar} className = {sideBar}>&#9776;</OpenBtn>
             <CloseBtn  onClick = {mostrarSideBar} className = {sideBar}>&times;</CloseBtn>
-            <List className = {sideBar}>                
+            <List className = {sideBar}
+                style = {{
+                    background: `${props.background}`
+                }}
+            >                
                 <ListItem><Link to="/skills" className="Enlace">Habilidades</Link></ListItem>
                 <ListItem>Experiencia</ListItem>
                 <ListItem><Link to="/aboutMe" className="Enlace">Sobre mí..</Link></ListItem>
@@ -29,7 +37,6 @@ export default Navbar;
 const NavbarList = styled.nav`{
     width: 100%;
     height: 60px;
-    background: #c76a7b;
     display: flex;
     justify-content: flex-end;
 }`
@@ -48,7 +55,6 @@ const List = styled.ul`{
     padding: 20px;
     padding-bottom: 0;
     height: 87.8vh;
-    background: #c76a7b;
     border-box: box-sizing;
 
     &.oculto {

@@ -3,11 +3,17 @@ import styled from 'styled-components'
 import Section from './Skills-Section/index.js';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import HomeButton from '../HomeButton/index.js';
+import Navbar from '../Main/Navbar/index'
 
 const SectionSkills = () => {
 
     return(
         <Content>
+            <StyledNavbar>
+                <Navbar
+                    background = '#ddd'
+                />
+            </StyledNavbar>
             <SkillsTitleContain>
                 <SkillsTitle>Skills</SkillsTitle>
             </SkillsTitleContain>
@@ -19,17 +25,29 @@ const SectionSkills = () => {
 
 export default SectionSkills;
 
+const StyledNavbar = styled.div`{
+    box-sizind: border-box;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}`
+
+
 const Content = styled.div`{
     background: #F1F1F2;
     height: 100vh;
     width: 100%;
     padding-top: 3%;
     box-sizing: border-box;
+
 }`;
 
 const SkillsTitleContain = styled.div`{
     display: flex;
     justify-content: center;
+    margin-top: 30px;
 }`
 
 const SkillsTitle = styled.h1`{

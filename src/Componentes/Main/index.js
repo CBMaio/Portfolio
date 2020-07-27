@@ -12,7 +12,9 @@ const Main = () => {
     
     return(
         <PrincipalPage className = {estado} >
-            <Navbar/>
+            <Navbar
+                background = '#c76a7b'
+            />
             <NameContain onClick = {cambiarEstado}>
                 <Name className = {estado}>Carolina</Name>
             </NameContain>
