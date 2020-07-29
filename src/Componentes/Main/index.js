@@ -14,6 +14,7 @@ const Main = () => {
         <PrincipalPage className = {estado} >
             <Navbar
                 background = '#c76a7b'
+                letterColor = '#fff'
             />
             <NameContain onClick = {cambiarEstado}>
                 <Name className = {estado}>Carolina</Name>

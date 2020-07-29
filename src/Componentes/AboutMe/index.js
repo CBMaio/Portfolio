@@ -12,6 +12,7 @@ const AboutMeBox = () => {
             <StyledNavbar>
                 <Navbar
                     background = "#ddd"
+                    letterColor = '#061e24'
                 />
             </StyledNavbar>
             <Title/>

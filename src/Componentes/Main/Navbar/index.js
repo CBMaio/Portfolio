@@ -13,17 +13,30 @@ const Navbar = (props) => {
             style = {{
                    background: `${props.background}` 
             }}
-  >
+        >
             <OpenBtn onClick = {mostrarSideBar} className = {sideBar}>&#9776;</OpenBtn>
             <CloseBtn  onClick = {mostrarSideBar} className = {sideBar}>&times;</CloseBtn>
             <List className = {sideBar}
                 style = {{
                     background: `${props.background}`
-                }}
-            >                
-                <ListItem><Link to="/skills" className="Enlace">Habilidades</Link></ListItem>
-                <ListItem>Experiencia</ListItem>
-                <ListItem><Link to="/aboutMe" className="Enlace">Sobre mí..</Link></ListItem>
+                }}>     
+
+                <ListItem>
+                        <Link to="/skills" className="Enlace"
+                            style = {{
+                                color: `${props.letterColor}`
+                            }}>
+                                Habilidades
+                        </Link>
+                </ListItem>
+                <ListItem>
+                    <Link to="/aboutMe" className="Enlace"
+                            style = {{
+                                color: `${props.letterColor}`
+                            }}>
+                        Sobre mí..
+                    </Link>
+                </ListItem>
                 <span>
                     <Contacto/>
                 </span>
@@ -86,7 +99,6 @@ const ListItem = styled.li`{
     
     & > .Enlace {
             text-decoration: none;
-            color: #fff;
         }
         
     &:hover{

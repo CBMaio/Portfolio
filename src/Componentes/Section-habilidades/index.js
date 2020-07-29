@@ -12,6 +12,7 @@ const SectionSkills = () => {
             <StyledNavbar>
                 <Navbar
                     background = '#ddd'
+                    letterColor = '#061e24'
                 />
             </StyledNavbar>
             <SkillsTitleContain>
