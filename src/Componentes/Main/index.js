@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import Navbar from './Navbar/index.js';
-import Contacto from './Contacto/index.js';
 import FotoPerfil from '../../Archivos/img/foto-Reverse.png';
 import FotoPerfilInvertida from '../../Archivos/img/image.png';
 
 const Main = () => {
 
     const [estado, setEstado] = useState("dia");
-    const cambiarEstado = () => {estado == "dia" ? setEstado("noche") : setEstado("dia")};
+    const cambiarEstado = () => {estado === "dia" ? setEstado("noche") : setEstado("dia")};
     
     return(
         <PrincipalPage className = {estado} >

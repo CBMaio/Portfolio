@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import Contacto from '../Contacto/index.js';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import {     Link } from 'react-router-dom';
 
 const Navbar = (props) => {
 
     const [sideBar, setSideBar] = useState("oculto");
-    const mostrarSideBar = () => {sideBar == "oculto" ? setSideBar("ver") : setSideBar("oculto")};
+    const mostrarSideBar = () => {sideBar === "oculto" ? setSideBar("ver") : setSideBar("oculto")};
 
     return (
         <NavbarList 

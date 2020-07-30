@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Title from './titulo-experiencia/tituloex.js';
 import Subtitle from './Mis-trabajos/mis-trabajos.js'; 
 import HomeButton from '../HomeButton/index';

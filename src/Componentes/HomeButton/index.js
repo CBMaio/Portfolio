@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import Navbar from '../Main/Navbar/index'
+import { Link } from 'react-router-dom';
 
 const HomeButton = () => {
     return (
