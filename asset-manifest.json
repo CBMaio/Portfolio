@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "./static/css/main.914d71b7.chunk.css",
-    "main.js": "./static/js/main.d7006126.chunk.js",
-    "main.js.map": "./static/js/main.d7006126.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.fcfe82c5.js",
-    "runtime-main.js.map": "./static/js/runtime-main.fcfe82c5.js.map",
-    "static/js/2.a6cce981.chunk.js": "./static/js/2.a6cce981.chunk.js",
-    "static/js/2.a6cce981.chunk.js.map": "./static/js/2.a6cce981.chunk.js.map",
-    "index.html": "./index.html",
-    "precache-manifest.76ea17a74bce2496b70ee7a1e240594f.js": "./precache-manifest.76ea17a74bce2496b70ee7a1e240594f.js",
-    "service-worker.js": "./service-worker.js",
-    "static/css/main.914d71b7.chunk.css.map": "./static/css/main.914d71b7.chunk.css.map",
-    "static/js/2.a6cce981.chunk.js.LICENSE.txt": "./static/js/2.a6cce981.chunk.js.LICENSE.txt",
-    "static/media/foto-Reverse.png": "./static/media/foto-Reverse.6845c46e.png",
-    "static/media/style.css": "./static/media/icomoonBtn.fe6d0117.eot",
-    "static/media/image.png": "./static/media/image.da20fbe5.png"
+    "main.css": "/static/css/main.a6c48633.chunk.css",
+    "main.js": "/static/js/main.f23eefe5.chunk.js",
+    "main.js.map": "/static/js/main.f23eefe5.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c3e8af0c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c3e8af0c.js.map",
+    "static/js/2.5ee23f4a.chunk.js": "/static/js/2.5ee23f4a.chunk.js",
+    "static/js/2.5ee23f4a.chunk.js.map": "/static/js/2.5ee23f4a.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.b8d7627c5069196aed0499efe0c6e0c7.js": "/precache-manifest.b8d7627c5069196aed0499efe0c6e0c7.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.a6c48633.chunk.css.map": "/static/css/main.a6c48633.chunk.css.map",
+    "static/js/2.5ee23f4a.chunk.js.LICENSE.txt": "/static/js/2.5ee23f4a.chunk.js.LICENSE.txt",
+    "static/media/foto-Reverse.png": "/static/media/foto-Reverse.6845c46e.png",
+    "static/media/style.css": "/static/media/icomoonBtn.fe6d0117.eot",
+    "static/media/image.png": "/static/media/image.da20fbe5.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.fcfe82c5.js",
-    "static/js/2.a6cce981.chunk.js",
-    "static/css/main.914d71b7.chunk.css",
-    "static/js/main.d7006126.chunk.js"
+    "static/js/runtime-main.c3e8af0c.js",
+    "static/js/2.5ee23f4a.chunk.js",
+    "static/css/main.a6c48633.chunk.css",
+    "static/js/main.f23eefe5.chunk.js"
   ]
 }
