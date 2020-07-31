@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.a6c48633.chunk.css",
-    "main.js": "/static/js/main.48d2cb22.chunk.js",
-    "main.js.map": "/static/js/main.48d2cb22.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.c3e8af0c.js",
-    "runtime-main.js.map": "/static/js/runtime-main.c3e8af0c.js.map",
-    "static/js/2.5ee23f4a.chunk.js": "/static/js/2.5ee23f4a.chunk.js",
-    "static/js/2.5ee23f4a.chunk.js.map": "/static/js/2.5ee23f4a.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.1286b982c6bb4af7e2fc9d27b229b2a3.js": "/precache-manifest.1286b982c6bb4af7e2fc9d27b229b2a3.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.a6c48633.chunk.css.map": "/static/css/main.a6c48633.chunk.css.map",
-    "static/js/2.5ee23f4a.chunk.js.LICENSE.txt": "/static/js/2.5ee23f4a.chunk.js.LICENSE.txt",
-    "static/media/foto-Reverse.png": "/static/media/foto-Reverse.6845c46e.png",
-    "static/media/style.css": "/static/media/icomoonBtn.fe6d0117.eot",
-    "static/media/image.png": "/static/media/image.da20fbe5.png"
+    "main.css": "/Portfolio/static/css/main.891ed3c1.chunk.css",
+    "main.js": "/Portfolio/static/js/main.4eeeda17.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.4eeeda17.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.d985277c.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.d985277c.js.map",
+    "static/js/2.106a099e.chunk.js": "/Portfolio/static/js/2.106a099e.chunk.js",
+    "static/js/2.106a099e.chunk.js.map": "/Portfolio/static/js/2.106a099e.chunk.js.map",
+    "index.html": "/Portfolio/index.html",
+    "precache-manifest.4f4224b86d11b63b2ce0f663debdd308.js": "/Portfolio/precache-manifest.4f4224b86d11b63b2ce0f663debdd308.js",
+    "service-worker.js": "/Portfolio/service-worker.js",
+    "static/css/main.891ed3c1.chunk.css.map": "/Portfolio/static/css/main.891ed3c1.chunk.css.map",
+    "static/js/2.106a099e.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.106a099e.chunk.js.LICENSE.txt",
+    "static/media/foto-Reverse.png": "/Portfolio/static/media/foto-Reverse.6845c46e.png",
+    "static/media/style.css": "/Portfolio/static/media/icomoonBtn.fe6d0117.eot",
+    "static/media/image.png": "/Portfolio/static/media/image.da20fbe5.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.c3e8af0c.js",
-    "static/js/2.5ee23f4a.chunk.js",
-    "static/css/main.a6c48633.chunk.css",
-    "static/js/main.48d2cb22.chunk.js"
+    "static/js/runtime-main.d985277c.js",
+    "static/js/2.106a099e.chunk.js",
+    "static/css/main.891ed3c1.chunk.css",
+    "static/js/main.4eeeda17.chunk.js"
   ]
 }
