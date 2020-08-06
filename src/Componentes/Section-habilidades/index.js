@@ -12,6 +12,8 @@ const SectionSkills = () => {
                 <Navbar
                     background = '#ddd'
                     letterColor = '#061e24'
+                    habilidadesOpacity = '0.5'
+                    aboutMeOpacity = '1'
                 />
             </StyledNavbar>
             <SkillsTitleContain>
@@ -41,7 +43,7 @@ const Content = styled.div`{
     width: 100%;
     padding-top: 3%;
     box-sizing: border-box;
-
+    position: relative;
 }`;
 
 const SkillsTitleContain = styled.div`{

@@ -8,7 +8,7 @@ const Main = () => {
 
     const [estado, setEstado] = useState("dia");
     const cambiarEstado = () => {estado === "dia" ? setEstado("noche") : setEstado("dia")};
-    
+
     return(
         <PrincipalPage className = {estado} >
             <Navbar
@@ -48,7 +48,7 @@ const PrincipalPage = styled.header`{
         background-image: url("${FotoPerfilInvertida}");
         background-repeat: no-repeat;
         background-size: contain;
-        transition: all .5s ease-out;
+        transition: all .3s ease-out;
         background-position: right;
 
         @media (max-width: 450px){
@@ -65,7 +65,7 @@ const PrincipalPage = styled.header`{
 
      &.dia {
          color: #feebed;
-         transition: all .5s ease-out;
+         transition: all .3s ease-out;
       }
 }`;
 

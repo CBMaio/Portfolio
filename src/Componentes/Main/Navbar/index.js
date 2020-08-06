@@ -1,12 +1,21 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import Contacto from '../Contacto/index.js';
-import {     Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
+const useNavbar = inicial => {
+    const [sideBar, setSideBar] = useState(inicial);
+    
+    const mostrarSideBar = () => {sideBar === "oculto" ? setSideBar("ver") : setSideBar("oculto")};
+
+    return { sideBar, mostrarSideBar }
+}
+
+
 
 const Navbar = (props) => {
 
-    const [sideBar, setSideBar] = useState("oculto");
-    const mostrarSideBar = () => {sideBar === "oculto" ? setSideBar("ver") : setSideBar("oculto")};
+    const { sideBar, mostrarSideBar } = useNavbar('oculto')
 
     return (
         <NavbarList 
@@ -24,7 +33,8 @@ const Navbar = (props) => {
                 <ListItem>
                         <Link to="/skills" className="Enlace"
                             style = {{
-                                color: `${props.letterColor}`
+                                color: `${props.letterColor}`,
+                                opacity: `${props.habilidadesOpacity}`
                             }}>
                                 Habilidades
                         </Link>
@@ -32,7 +42,8 @@ const Navbar = (props) => {
                 <ListItem>
                     <Link to="/aboutMe" className="Enlace"
                             style = {{
-                                color: `${props.letterColor}`
+                                color: `${props.letterColor}`,
+                                opacity: `${props.aboutMeOpacity}`
                             }}>
                         Sobre mí..
                     </Link>
@@ -78,6 +89,7 @@ const List = styled.ul`{
         display: flex;
         
         @media (max-width: 768px) {
+            height: 100%vh;
             width: 90%; 
             display: flex;
             text-align: center;

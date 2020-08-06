@@ -9,7 +9,7 @@ const Section = () => {
             <ContainSkills>
                 {
                     habilidades.map((habilidad) => (
-                        <SkillStyle>{habilidad}</SkillStyle>
+                        <SkillStyle key = {habilidad}>{habilidad}</SkillStyle>
                     ))
                 }
             </ContainSkills>

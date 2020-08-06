@@ -12,6 +12,8 @@ const AboutMeBox = () => {
                 <Navbar
                     background = "#ddd"
                     letterColor = '#061e24'
+                    habilidadesOpacity = '1'
+                    aboutMeOpacity = '0.5'
                 />
             </StyledNavbar>
             <Title/>
@@ -40,5 +42,6 @@ const SectionBackground = styled.div`{
       padding: 0;
       display: flex; 
       flex-direction: column;
+      position: relative;
   }`;
   

@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+
 
 const HomeButton = () => {
     return (
@@ -13,6 +14,7 @@ const HomeButton = () => {
 
 export default HomeButton;
 
+
 const Home = styled.h3`{
     font-family: 'Cedarville Cursive', cursive;
     display: flex; 
@@ -23,6 +25,7 @@ const Home = styled.h3`{
     margin-bottom: 0;
     cursor: pointer;
     position: fixed;
+    z-index: 0;
     bottom: 0;
     left: 0;
     
@@ -45,7 +48,8 @@ const Home = styled.h3`{
     }
 
     @media (max-width: 768px) {
-        position: relative;
+        position: absolute;
+        bottom: 0;
         margin: 0;
         width: 100%;
     }
